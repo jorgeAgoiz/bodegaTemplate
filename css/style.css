@@ -1,0 +1,139 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+1rem -> 16px
+2rem -> 32px
+3rem -> 48px
+*/
+html {
+  font-size: 75%;
+}
+
+body {
+  font-family: "Fredoka One", cursive;
+  font-weight: 400;
+  padding: 2rem;
+}
+
+.heading-primary {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+.heading-primary--main {
+  display: block;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+  animation: moveFromRight 1s ease-out;
+}
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  animation: moveFromLeft 1s ease-out;
+}
+
+@keyframes moveFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes moveFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(8rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.header {
+  width: 100%;
+  height: 30rem;
+  position: relative;
+  background-image: linear-gradient(90deg, rgba(252, 228, 87, 0.7) 0%, rgba(247, 228, 208, 0.7) 40%, rgba(247, 228, 208, 0.7) 60%, rgba(249, 160, 82, 0.7) 100%), url("../../img/claude-piche-EHbtjmz7hvw-unsplash.jpg");
+  background-size: cover;
+  background-position: bottom;
+  clip-path: polygon(0 1%, 100% 0%, 100% 85%, 0 100%);
+}
+.header__logo-box {
+  position: absolute;
+  top: 6rem;
+  left: 3rem;
+  backface-visibility: hidden;
+  animation-name: moveFromBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.header__logo {
+  height: 10rem;
+}
+.header__text-box {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  text-align: center;
+}
+
+.row {
+  max-width: 114rem;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class^=col-] {
+  float: left;
+}
+.row [class^=col-]:not(:last-child) {
+  margin-right: 6rem;
+}
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+.row .col-2-of-3 {
+  width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem );
+}
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4);
+}
+.row .col-2-of-4 {
+  width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem );
+}
+.row .col-3-of-4 {
+  width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem );
+}
+
+/*# sourceMappingURL=style.css.map */

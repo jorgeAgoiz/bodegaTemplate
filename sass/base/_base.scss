@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+1rem -> 16px
+2rem -> 32px
+3rem -> 48px
+*/
+html {
+  font-size: 75%; // Si queremos la fuente a 12px -> 12px / 16px(1rem) = 0,75
+}

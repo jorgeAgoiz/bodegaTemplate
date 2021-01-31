@@ -1,0 +1,28 @@
+// GENERAL TYPOGRAPHY
+body {
+  font-family: $font-fredoka;
+  font-weight: 400;
+  padding: 2rem;
+}
+
+// HEADER TITLES
+.heading-primary {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+
+  &--main {
+    display: block;
+    font-size: $font-size-titles;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+    animation: moveFromRight 1s ease-out;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    font-weight: 300;
+    animation: moveFromLeft 1s ease-out;
+  }
+}
