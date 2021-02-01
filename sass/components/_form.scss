@@ -1,0 +1,42 @@
+.section-form {
+  background-color: $color-grey-light;
+  padding: 15vh;
+  margin-top: -8vh;
+}
+
+.form {
+  margin: 0 auto;
+  display: block;
+
+  &__group {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__label {
+    font-size: $font-size-labels;
+    // MEDIA QUERY **********************************
+    @include respond(phone) {
+      font-size: $font-size-small;
+    }
+  }
+
+  &__input {
+    border-radius: 0.6rem;
+    width: 20%;
+    height: 4vh;
+    border: 2px solid $color-gold;
+    // MEDIA QUERY **********************************
+    @include respond(tab-land) {
+      width: 30%;
+    }
+    @include respond(tab-port) {
+      width: 60%;
+      height: 6vh;
+    }
+    @include respond(phone) {
+      width: 110%;
+      height: 6vh;
+    }
+  }
+}
