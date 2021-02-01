@@ -24,7 +24,6 @@
   &__input {
     border-radius: 0.6rem;
     width: 20%;
-    height: 4vh;
     border: 2px solid $color-gold;
     // MEDIA QUERY **********************************
     @include respond(tab-land) {
@@ -32,11 +31,9 @@
     }
     @include respond(tab-port) {
       width: 60%;
-      height: 6vh;
     }
     @include respond(phone) {
       width: 110%;
-      height: 6vh;
     }
   }
 }

@@ -286,7 +286,6 @@ body {
 .form__input {
   border-radius: 0.6rem;
   width: 20%;
-  height: 4vh;
   border: 2px solid rgba(249, 160, 82, 0.7);
 }
 @media (max-width: 75em) {
@@ -297,13 +296,11 @@ body {
 @media (max-width: 56.25em) {
   .form__input {
     width: 60%;
-    height: 6vh;
   }
 }
 @media (max-width: 37.5em) {
   .form__input {
     width: 110%;
-    height: 6vh;
   }
 }
 
