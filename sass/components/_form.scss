@@ -12,16 +12,16 @@
   }
 
   & h1 {
-    color: #fde42b;
+    color: $color-yellow;
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     animation: moveFromTop 1.5s ease-out;
   }
 
   & h2 {
-    color: #fde42b;
+    color: $color-yellow;
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
     animation: moveFromRight 1.5s ease-out;
   }
 
@@ -29,7 +29,7 @@
     z-index: 1;
     color: $color-white;
     font-size: 5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     animation: moveFromLeft 1.5s ease-out;
   }
@@ -54,14 +54,14 @@
     &:hover,
     &:focus,
     &:active {
-      border-left: solid 8px #4285f4;
-      border-right: solid 8px #4285f4;
-      box-shadow: 0 0 100px rgba(66, 133, 244, 0.8);
+      border-left: solid 8px $color-blue;
+      border-right: solid 8px $color-blue;
+      box-shadow: 0 0 100px $color-blue-shadow;
     }
   }
 
   &__options-01 {
-    margin-bottom: 3.5rem;
+    margin-bottom: 2rem;
 
     & a {
       color: #888;
@@ -75,7 +75,7 @@
     border: none;
     width: 22rem;
     height: 4rem;
-    background: #4285f4;
+    background: $color-blue;
     color: #fff;
     font-size: 1.2rem;
     letter-spacing: 1px;
@@ -89,9 +89,9 @@
     }
 
     &:hover {
-      border-left: solid 8px rgba(255, 255, 255, 0.5);
-      border-right: solid 8px rgba(255, 255, 255, 0.5);
-      box-shadow: 0 0 100px rgba(66, 133, 244, 0.8);
+      border-left: solid 8px $color-grey-btnBorder;
+      border-right: solid 8px $color-grey-btnBorder;
+      box-shadow: 0 0 100px $color-blue-shadow;
     }
   }
 }
