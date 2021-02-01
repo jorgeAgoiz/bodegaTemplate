@@ -2,17 +2,12 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
+// THEMES
+@import "themes/home";
 // BASE
-@import "base/base";
-@import "base/typography";
 @import "base/animations";
-@import "base/utilities";
-
 // LAYOUTS
-@import "layout/header";
-@import "layout/grid";
 
 // COMPONENTS
 @import "components/form";
-@import "components/buttons";
-@import "components/bg-video.scss";
+@import "components/header";

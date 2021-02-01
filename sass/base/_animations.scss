@@ -1,29 +1,4 @@
-// FROM BOTTOM TO TOP
-@keyframes moveFromBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(10rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-// FROM RIGHT TO LEFT
 @keyframes moveFromRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-// FROM LEFT TO RIGHT
-@keyframes moveFromLeft {
   0% {
     opacity: 0;
     transform: translateX(8rem);
@@ -34,11 +9,13 @@
   }
 }
 
-@keyframes appear {
+@keyframes moveFromLeft {
   0% {
     opacity: 0;
+    transform: translateX(-8rem);
   }
   100% {
     opacity: 1;
+    transform: translateX(0);
   }
 }
