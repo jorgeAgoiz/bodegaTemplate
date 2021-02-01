@@ -12,25 +12,26 @@
   }
 
   & h1 {
-    color: $color-yellow;
+    color: #fde42b;
     font-size: 3rem;
     margin-bottom: 1rem;
-    animation: moveFromRight 1.5s ease-out;
+    animation: moveFromTop 1.5s ease-out;
   }
 
   & h2 {
-    color: $color-yellow;
+    color: #fde42b;
     font-size: 2rem;
     margin-bottom: 2rem;
-    animation: moveFromLeft 1.5s ease-out;
+    animation: moveFromRight 1.5s ease-out;
   }
 
   & i {
     z-index: 1;
-    color: $color-grey-light;
+    color: $color-white;
     font-size: 5rem;
     margin-bottom: 2rem;
     text-align: center;
+    animation: moveFromLeft 1.5s ease-out;
   }
 
   &__user-input {
